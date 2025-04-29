@@ -1,5 +1,5 @@
 <template>
-  <h1>主页</h1>
+  <div class="home-container"></div>
 </template>
 
 <script lang="ts">
@@ -10,4 +10,8 @@ export default {
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style lang="scss">
+.home-container {
+  padding: 20px;
+}
+</style>
