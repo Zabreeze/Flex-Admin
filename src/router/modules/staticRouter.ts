@@ -1,4 +1,4 @@
-import { HOME_URL, LOGIN_URL, REGISTER_URL } from "@/config";
+import { PageEnum } from '@/enums/pageEnum';
 
 /**
  * staticRouter (静态路由)
@@ -11,10 +11,10 @@ export const staticRouter = [
     meta: {
       title: ""
     },
-    redirect: HOME_URL,
+    redirect: PageEnum.BASE_HOME,
     children: [
       {
-        path: HOME_URL,
+        path: PageEnum.BASE_HOME,
         component: () => import("@/views/home/index.vue"),
         meta: {
           title: "首页"
@@ -23,7 +23,7 @@ export const staticRouter = [
     ]
   },
   {
-    path: LOGIN_URL,
+    path: PageEnum.BASE_LOGIN,
     name: "login",
     component: () => import("@/views/login/index.vue"),
     meta: {
@@ -31,7 +31,7 @@ export const staticRouter = [
     }
   },
   {
-    path: REGISTER_URL,
+    path: PageEnum.BASE_REGISTER,
     name: "register",
     component: () => import("@/views/register/index.vue"),
     meta: {

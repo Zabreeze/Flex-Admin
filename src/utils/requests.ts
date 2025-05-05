@@ -1,9 +1,10 @@
+import { getToken } from "@/utils"
 /**
  * @description 配置用户标识
  */
 export const handleAuth = config => {
   if (config.headers && typeof config.headers.set === "function") {
-    config.headers["Authorization"] = localStorage.getItem("TOKEN") || "";
+    config.headers["Authorization"] = getToken() || "";
   }
   return config;
 };
