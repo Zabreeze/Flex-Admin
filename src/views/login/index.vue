@@ -121,7 +121,7 @@ const login = async () => {
 
   try {
     const res = await useStore.login(loginForm)
-    router.push({ path: PageEnum.BASE_REGISTER })
+    router.push({ path: PageEnum.BASE_HOME })
   } catch (error) {
     console.log('Login failed')
   }

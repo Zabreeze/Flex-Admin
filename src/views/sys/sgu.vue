@@ -1,14 +1,10 @@
 <template>
-  <div class="home-container">
-    我是home
-    <!-- <svg-icon name="logo"> -->
-    <SvgIcon name="logo" />
-  </div>
+  <div class="home-container">我是Sgu</div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'HomeIndex',
+  name: 'SguIndex',
 }
 </script>
 

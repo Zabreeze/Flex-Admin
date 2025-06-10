@@ -1,15 +1,13 @@
 <template>
-  <div class="layout-container">
-    <div>侧边栏</div>
-    <div>
-      <router-view />
-    </div>
-  </div>
+  <LayoutClassic></LayoutClassic>
 </template>
 
+<script setup lang="ts" name="layout">
+import LayoutClassic from './LayoutClassic/index.vue'
+</script>
 <script lang="ts">
 export default {
-  name: 'IndexLayout',
+  name: 'LayoutIndex',
 }
 </script>
 

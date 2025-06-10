@@ -1,0 +1,57 @@
+{
+  "status": 200,
+  "msg": "SUCCESS",
+  "data": [
+    {
+      "menuId": 1,
+      "menuName": "系统管理",
+      "enName": "System Manage",
+      "parentId": 0,
+      "menuType": "1",
+      "path": "/sys",
+      "name": "sys",
+      "component": "",
+      "icon": "Tools",
+      "isHide": "1",
+      "isLink": "",
+      "isKeepAlive": "0",
+      "isFull": "1",
+      "isAffix": "1",
+      "redirect": "/sys/sgu"
+    },
+    {
+      "menuId": 1001,
+      "menuName": "sgu",
+      "enName": "sgu",
+      "parentId": 1,
+      "menuType": "1",
+      "path": "sgu",
+      "name": "sgu",
+      "component": "sys/sgu",
+      "icon": "Tools",
+      "isHide": "1",
+      "isLink": "",
+      "isKeepAlive": "0",
+      "isFull": "1",
+      "isAffix": "1",
+      "redirect": ""
+    },
+    {
+      "menuId": 1002,
+      "menuName": "sku",
+      "enName": "sku",
+      "parentId": 1,
+      "menuType": "1",
+      "path": "sku",
+      "name": "sku",
+      "component": "sys/sku",
+      "icon": "Tools",
+      "isHide": "1",
+      "isLink": "",
+      "isKeepAlive": "0",
+      "isFull": "1",
+      "isAffix": "1",
+      "redirect": ""
+    }
+  ]
+}

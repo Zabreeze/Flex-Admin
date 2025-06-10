@@ -4,6 +4,8 @@ import eslintPlugin from "vite-plugin-eslint";
 import setupPlugin from "vite-plugin-vue-setup-extend";
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import tailwindcss from '@tailwindcss/vite';
+import { createHtmlPlugin } from 'vite-plugin-html'
+import vueDevTools from 'vite-plugin-vue-devtools'
 import path from "path";
 
 /**
@@ -24,6 +26,8 @@ export const createVitePlugins = (): (PluginOption | PluginOption[])[] => {
       // Specify symbolId format
       symbolId: 'icon-[dir]-[name]',
     }),
-    tailwindcss()
+    tailwindcss(),
+    vueDevTools(),
+    createHtmlPlugin({})
   ];
 };
